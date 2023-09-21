@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+body{
+    font-family: 'Gowun Batang', serif;
+    background: url('/images/spikes.webp');
+    scroll-behavior: smooth;
+}
+
+.introduction{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-bottom: min(2vw);
+}
+
+.introduction h1{
+    font-size: min(6vw, 1000px);
+}
+
+span{
+    font-size: 1vw;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.box{
+    overflow: hidden;
+}
+.box img{
+   
+width: 100%;
+height: auto;
+transform-origin: 0 0;
+transition: transform .25s, visibility .25s ease-in;
+}
+
+.box img:hover{
+    transform: scale(1.05);
+}
+
+.designs{
+    width: 100%;
+    height: auto;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+.video-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+video {
+    max-width: 100%;
+    width: 32.4vw;
+    height: auto;
+}
+.description{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.description img{
+    max-width: 100%;
+    width: 32.4vw;
+    height: 95%;
+}
+
+
